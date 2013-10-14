@@ -14,7 +14,7 @@
 <!--<div><img src="img/flowers-wall.jpg" alt="" /></div>-->
 
 <div><p>
-    = THE END =
+    — THE END —
 </p></div>
 <div><p>
     Browser support: FireFox and Chrome, and maybe more.
@@ -35,26 +35,17 @@
 <p id="githublink"><a href="https://github.com/kordwarshuis/oldMovieEffectSlideDeck">Check source on Github</a></p>
 </body>
 
-<script>
-    (function(args) {
-        var allSlides = document.querySelectorAll(args.element);
-        var i = allSlides.length-1;
-        var keepLastSlideVisisble;
-        args.keepLastSlideVisisble ? keepLastSlideVisisble = 0 : keepLastSlideVisisble = -1;
 
-        setTimeout(k, args.pause);
-        function k(){
-            if (i > keepLastSlideVisisble) {
-                allSlides[i].style.display = "none";
-                i--;
-                setTimeout(k, args.pause);
-            }
-        }
-    })({
-        element:"div",
-        pause:4000,
-        keepLastSlideVisisble:true
-    });
+<script src="js/oldMovieEffectSlideDeck.js"></script>
+<script>
+    /*************************************
+     CONIGURATION
+     *************************************/
+    var config = {
+        element: "div",
+        pause: 4000,
+        keepLastSlideVisisble: true
+    }
 </script>
 
 
