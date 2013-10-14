@@ -12,7 +12,7 @@ body {
     text-align: center;
     font-size: 50px;
     color: #fff;
-    font-family: courier new;
+    font-family: "courier new";
 }
 
 div {
@@ -21,6 +21,7 @@ div {
     position: absolute;
     top: 0;
     left: 0;
+    overflow: auto;
     padding: 50px;
     height: 100%;
     width: 100%;
@@ -34,6 +35,14 @@ img {
     padding: 0;
 }
 
+
+#githublink {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 20px;
+    z-index: 1000;
+}
 
 html, body {
     position: absolute;
