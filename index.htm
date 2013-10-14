@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>oldMovieEffectSlideDeck</title>
+    <link href="css/oldMovieEffectSlideDeck.css" rel="stylesheet">
+    <!--
+    * Copyright 2013 Kor Dwarshuis <kor@dwarshuis.com>
+    * Released under the MIT license.
+    -->
+</head>
+<body>
+
+<!--<div><img src="img/flowers-wall.jpg" alt="" /></div>-->
+
+<div><p>
+    = THE END =
+</p></div>
+<div><p>
+    Browser support: FireFox and Chrome, and maybe more.
+</p></div>
+
+<div><p>
+    Make sure you enter your text backward, see source</p></div>
+
+<div><p>
+    Suitable for presentations that need an old feel.
+</p></div>
+
+<div><p>
+    This is a simple slide deck with an old movie effect.
+</p></div>
+</body>
+
+<script>
+    (function(args) {
+        var allSlides = document.querySelectorAll(args.element);
+        var i = allSlides.length-1;
+        var keepLastSlideVisisble;
+        args.keepLastSlideVisisble ? keepLastSlideVisisble = 0 : keepLastSlideVisisble = -1;
+
+        setTimeout(k, args.pause);
+        function k(){
+            if (i > keepLastSlideVisisble) {
+                allSlides[i].style.display = "none";
+                i--;
+                setTimeout(k, args.pause);
+            }
+        }
+    })({
+        element:"div",
+        pause:4000,
+        keepLastSlideVisisble:true
+    });
+</script>
+
+
+</html>
