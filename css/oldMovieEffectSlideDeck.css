@@ -6,10 +6,11 @@
 * {
     box-sizing: border-box;
     overflow: hidden;
+    text-align: center;
 }
 
 body {
-    text-align: center;
+
     font-size: 50px;
     color: #fff;
     /*-webkit-text-shadow: inset 0 0 5px #000;*/
@@ -24,7 +25,8 @@ div {
     top: 0;
     left: 0;
     overflow: auto;
-    padding: 50px;
+    margin: 0;
+    padding: 0px;
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -302,7 +304,7 @@ body {
 
 
 
-body {
+body.oldMovieEffectSlideDeck {
     content: "";
     -webkit-animation-name: jumpy;
     animation-name: jumpy;
@@ -320,7 +322,7 @@ body {
 }
 
 
-body:before {
+body.oldMovieEffectSlideDeck:before {
     content: "";
     border-left: solid 3px #555;
     -webkit-box-shadow: 0 0 15px #444;
@@ -339,14 +341,13 @@ body:before {
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
 
-    visibility: visible;
-
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 
     z-index: 2;
 }
-html:before {
+/*html:before {*/
+body.oldMovieEffectSlideDeck div:before { /* why is last-child etc not working */
     content: "";
     border-left: solid 1px #555;
     padding: 2px;
@@ -363,15 +364,13 @@ html:before {
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
 
-    visibility: visible;
-
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 
-    z-index: 5;
+    z-index: 4;
 }
 
-body:after {
+body.oldMovieEffectSlideDeck:after {
     content: "";
     -webkit-animation-name: vignette;
     animation-name: vignette;
@@ -401,7 +400,7 @@ body:after {
 
 
 
-body :first-child:after {
+body.oldMovieEffectSlideDeck :first-child:after {
     content: ".";
 
     animation: speckles 1s steps(1) infinite;
@@ -416,7 +415,7 @@ body :first-child:after {
 
     z-index: 5;
 }
-body :first-child:before {
+body.oldMovieEffectSlideDeck :first-child:before {
     content: "~";
 
     animation: speckles 1s 2s steps(1) infinite;
@@ -424,14 +423,13 @@ body :first-child:before {
 
     visibility: hidden;
     font-size: 150px;
-    color: #696969;
     color: #fff;
     text-shadow: 0 0 30px #fff;
     opacity: 0.3;
     z-index: 5;
 }
 
-body :first-child {/*http://jsfiddle.net/NeqCC/*/
+body.oldMovieEffectSlideDeck :first-child {/*http://jsfiddle.net/NeqCC/*/
     /* Shadows are visible under slightly transparent text color */
     animation: letterfocus 15s steps(1) infinite;
     -webkit-animation: letterfocus 15s steps(1) infinite;

@@ -38,6 +38,8 @@
             allSlides[i].style.display = "none";
             i--;
             setTimeout(k, args.pause);
+        } else {
+            document.body.className = ""; // stop animation
         }
     }
 })(config);
