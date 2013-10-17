@@ -13,4 +13,4 @@ There are a few configuration options in the index.htm
 
 ## Credits:
 * Background-sound: I use a shortened version of <a href="http://freesound.org/people/Incarnadine/sounds/16997/">this sound recorded by Incarnadine</a>
-* Frame / border: <a href="http://www.briarpress.org/935">Briar press, number 935</a>
+* Frame / border: <a href="http://www.briarpress.org/4081">Briar press, number 4081, inverted color</a>
