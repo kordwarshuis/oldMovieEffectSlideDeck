@@ -5,12 +5,25 @@
 
 * {
     box-sizing: border-box;
-    overflow: hidden;
     text-align: center;
 }
 
+
+html, body {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
 body {
-    font-size: 50px;
+    position: fixed;
+
+    font-size: 60px;    /* old */
+    font-size: 6vm;   /* IE9 */
+    font-size: 6vmin;
+
     color: rgba(227, 227, 227, 0.80);
     font-family: 'Geneva, Verdana, “Lucida Sans”, “Lucida Grande”, “Lucida Sans Unicode”, sans-serif';
     -webkit-text-shadow: 1px 4px 1px #e0e0e0, 0 0 0 #000, 1px 4px 1px #e0e0e0;
@@ -20,13 +33,17 @@ body {
 div {
     -webkit-box-shadow: inset 0 0 150px #000;
     box-shadow: inset 0 0 150px #000;
-    background: #696969 url("../img/auriol2.png") no-repeat;
-    background-size: 100% 100%;
+    background-color: #696969;
+    background-size: 25% 25%;
+    background-image: url("../img/ornament3.png"), url("../img/ornament3.png");
+    background-position: center -20%, center 120%;
+    background-repeat: no-repeat;
+
     position: absolute;
     top: 0;
     left: 0;
-    overflow: auto;
     margin: 0;
+    overflow: hidden;
     padding: 0;
     height: 100%;
     width: 100%;
@@ -39,9 +56,9 @@ p {
 }
 
 
-img {
-    width: 100%;
-    min-width: 100%;
+div img {
+    width: 60%;
+    min-width: 60%;
     margin: 0;
     padding: 0;
 }
@@ -51,21 +68,17 @@ img {
     position: fixed;
     right: 0;
     bottom: 0;
-    font-size: 20px;
+    font-size: 30px;    /* old */
+    font-size: 3vm;   /* IE9 */
+    font-size: 3vmin;
     z-index: 1000;
 }
 
-html, body {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+#githublink a {
+    color: inherit;
 }
 
-body {
-    position: fixed;
-}
+
 
 @keyframes jumpy {
     0% {
@@ -113,6 +126,9 @@ body {
         -webkit-transform: translateY(-5px);
     }
 }
+
+
+
 @keyframes vignette {
     0% {
         box-shadow: inset 0 0 150px #000;
@@ -162,11 +178,6 @@ body {
 
 
 
-
-
-
-
-
 @keyframes movingstripe {
     0% {
         /*transform: translateX(0px) rotate(4.5deg);*/
@@ -202,6 +213,7 @@ body {
         -webkit-transform: translateX(1400px);
     }
 }
+
 
 
 @keyframes movingstripe2 {
@@ -254,10 +266,6 @@ body {
 
 
 
-
-
-
-
 @keyframes letterfocus {
     0% {
         text-shadow: 1px 4px 6px #e0e0e0, 0 0 0 #000, 1px 4px 6px #e0e0e0;
@@ -307,10 +315,6 @@ body {
 
 
 
-
-
-
-
 body.oldMovieEffectSlideDeck {
     content: "";
     -webkit-animation-name: jumpy;
@@ -327,8 +331,6 @@ body.oldMovieEffectSlideDeck {
     animation-iteration-count: infinite;
     z-index: 4;
 }
-
-
 body.oldMovieEffectSlideDeck:before {
     content: "";
     border-left: solid 3px #555;
@@ -353,7 +355,6 @@ body.oldMovieEffectSlideDeck:before {
 
     z-index: 2;
 }
-/*html:before {*/
 body.oldMovieEffectSlideDeck div:before { /* why is last-child etc not working */
     content: "";
     border-left: solid 1px #555;
@@ -376,7 +377,6 @@ body.oldMovieEffectSlideDeck div:before { /* why is last-child etc not working *
 
     z-index: 4;
 }
-
 body.oldMovieEffectSlideDeck:after {
     content: "";
     -webkit-animation-name: vignette;
@@ -404,9 +404,6 @@ body.oldMovieEffectSlideDeck:after {
     top: 0;
     z-index: 5;
 }
-
-
-
 body.oldMovieEffectSlideDeck :first-child:after {
     content: ".";
 
@@ -435,11 +432,11 @@ body.oldMovieEffectSlideDeck :first-child:before {
     opacity: 0.3;
     z-index: 5;
 }
-
 body.oldMovieEffectSlideDeck :first-child {/*http://jsfiddle.net/NeqCC/*/
     /* Shadows are visible under slightly transparent text color */
     animation: letterfocus 15s steps(1) infinite;
     -webkit-animation: letterfocus 15s steps(1) infinite;
     color: rgba(227, 227, 227, 0.80);
     /*text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;*/
+    text-shadow: 1px 4px 6px #e0e0e0, 0 0 0 #000, 1px 4px 6px #e0e0e0;
 }
