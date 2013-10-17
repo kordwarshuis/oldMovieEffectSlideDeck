@@ -8,7 +8,7 @@ Turns a set of html divs with text into a “silent film”.
 See <a href="http://www.woudziel.nl/githubdemo/oldMovieEffectSlideDeck/">demo</a>.
 
 ## Instructions
-Use <div>'s to make the slides. Do not use nested divs.
+Use \<div\>'s to make the slides. Do not use nested divs.
 There are a few configuration options in the index.htm
 
 ## Credits:
