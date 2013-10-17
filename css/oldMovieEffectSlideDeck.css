@@ -10,33 +10,16 @@
 }
 
 body {
-
     font-size: 50px;
-    color: #fff;
-    /*-webkit-text-shadow: inset 0 0 5px #000;*/
-    /*text-shadow: inset 0 0 15px #000;*/
-    /*font-family: "courier new";*/
+    color: rgba(227, 227, 227, 0.80);
     font-family: 'Geneva, Verdana, “Lucida Sans”, “Lucida Grande”, “Lucida Sans Unicode”, sans-serif';
-    /*font-family: "Frutiger, ‘Frutiger Linotype’, Univers, Calibri, ‘Gill Sans’, ‘Gill Sans MT’, ‘Myriad Pro’, Myriad, ‘DejaVu Sans Condensed’, ‘Liberation Sans’, ‘Nimbus Sans L’, Tahoma, Geneva, ‘Helvetica Neue’, Helvetica, Arial, sans-serif";*/
-
-    /*-webkit-text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;*/
-    /*text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;*/
-    -webkit-text-shadow: 1px 4px 1px #def, 0 0 0 #000, 1px 4px 1px #def;
-    text-shadow: 1px 4px 1px #def, 0 0 0 #000, 1px 4px 1px #def;
-
+    -webkit-text-shadow: 1px 4px 1px #e0e0e0, 0 0 0 #000, 1px 4px 1px #e0e0e0;
+    text-shadow: 1px 4px 1px #e0e0e0, 0 0 0 #000, 1px 4px 1px #e0e0e0;
 }
 
-
-
-
-
-
-
-
-
 div {
-
-    /*background: #696969;*/
+    -webkit-box-shadow: inset 0 0 150px #000;
+    box-shadow: inset 0 0 150px #000;
     background: #696969 url("../img/auriol2.png") no-repeat;
     background-size: 100% 100%;
     position: absolute;
@@ -277,48 +260,48 @@ body {
 
 @keyframes letterfocus {
     0% {
-        text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;
+        text-shadow: 1px 4px 6px #e0e0e0, 0 0 0 #000, 1px 4px 6px #e0e0e0;
     }
     20% {
-        text-shadow: 1px 4px 1px #def, 0 0 0 #000, 1px 4px 1px #def;
+        text-shadow: 1px 4px 1px #e0e0e0, 0 0 0 #000, 1px 4px 1px #e0e0e0;
     }
     35% {
-        text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;
+        text-shadow: 1px 4px 6px #e0e0e0, 0 0 0 #000, 1px 4px 6px #e0e0e0;
     }
     50% {
-        text-shadow: 1px 4px 1px #def, 0 0 0 #000, 1px 4px 1px #def;
+        text-shadow: 1px 4px 1px #e0e0e0, 0 0 0 #000, 1px 4px 1px #e0e0e0;
     }
     65% {
-        text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;
+        text-shadow: 1px 4px 6px #e0e0e0, 0 0 0 #000, 1px 4px 6px #e0e0e0;
     }
     80% {
-        text-shadow: 1px 4px 1px #def, 0 0 0 #000, 1px 4px 1px #def;
+        text-shadow: 1px 4px 1px #e0e0e0, 0 0 0 #000, 1px 4px 1px #e0e0e0;
     }
     100% {
-        text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;
+        text-shadow: 1px 4px 6px #e0e0e0, 0 0 0 #000, 1px 4px 6px #e0e0e0;
     }
 }
 @-webkit-keyframes letterfocus {
     0% {
-        text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;
+        text-shadow: 1px 4px 6px #e0e0e0, 0 0 0 #000, 1px 4px 6px #e0e0e0;
     }
     20% {
-        text-shadow: 1px 4px 1px #def, 0 0 0 #000, 1px 4px 1px #def;
+        text-shadow: 1px 4px 1px #e0e0e0, 0 0 0 #000, 1px 4px 1px #e0e0e0;
     }
     35% {
-        text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;
+        text-shadow: 1px 4px 6px #e0e0e0, 0 0 0 #000, 1px 4px 6px #e0e0e0;
     }
     50% {
-        text-shadow: 1px 4px 1px #def, 0 0 0 #000, 1px 4px 1px #def;
+        text-shadow: 1px 4px 1px #e0e0e0, 0 0 0 #000, 1px 4px 1px #e0e0e0;
     }
     65% {
-        text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;
+        text-shadow: 1px 4px 6px #e0e0e0, 0 0 0 #000, 1px 4px 6px #e0e0e0;
     }
     80% {
-        text-shadow: 1px 4px 1px #def, 0 0 0 #000, 1px 4px 1px #def;
+        text-shadow: 1px 4px 1px #e0e0e0, 0 0 0 #000, 1px 4px 1px #e0e0e0;
     }
     100% {
-        text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;
+        text-shadow: 1px 4px 6px #e0e0e0, 0 0 0 #000, 1px 4px 6px #e0e0e0;
     }
 }
 
@@ -457,6 +440,6 @@ body.oldMovieEffectSlideDeck :first-child {/*http://jsfiddle.net/NeqCC/*/
     /* Shadows are visible under slightly transparent text color */
     animation: letterfocus 15s steps(1) infinite;
     -webkit-animation: letterfocus 15s steps(1) infinite;
-    color: rgba(255,255,255, 0.8);
+    color: rgba(227, 227, 227, 0.80);
     /*text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;*/
 }
