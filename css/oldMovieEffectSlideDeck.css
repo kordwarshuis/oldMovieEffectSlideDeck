@@ -25,7 +25,7 @@ body {
     font-family: 'Geneva, Verdana, “Lucida Sans”, “Lucida Grande”, “Lucida Sans Unicode”, sans-serif';
     -webkit-text-shadow: 1px 4px 1px #e0e0e0, 0 0 0 #000, 1px 4px 1px #e0e0e0;
     position: fixed;
-    text-shadow: 1px 4px 1px #e0e0e0, 0 0 0 #000, 1px 4px 1px #e0e0e0;
+    text-shadow: 1px 4px 6px #e0e0e0, 0 0 0 #000, 1px 4px 6px #e0e0e0;
 }
 
 div {
@@ -59,21 +59,29 @@ div img {
     width: 60%;
 }
 
-#githublink {
-    bottom: 0;
+#escapelink {
+    bottom: 10px;    /* old */
+    bottom: 1vm;   /* IE9 */
+    bottom: 1vmin;
     font-size: 30px;    /* old */
     font-size: 3vm;   /* IE9 */
     font-size: 3vmin;
+    margin: 0;
     position: fixed;
-    right: 0;
-    z-index: 1000;
+    right: 10px;    /* old */
+    right: 1vm;   /* IE9 */
+    right: 1vmin;
+    z-index: 6;
 }
 
-#githublink a {
+a {
+    border-bottom: 3px solid;
+    -webkit-box-shadow: 1px 4px 6px #e0e0e0, 0 0 0 #000, 1px 4px 6px #e0e0e0;
+    box-shadow: 1px 4px 6px #e0e0e0, 0 0 0 #000, 1px 4px 6px #e0e0e0;
     color: inherit;
+    text-decoration: none;
+    z-index: 6;
 }
-
-
 
 @keyframes jumpy {
     0% {
@@ -319,18 +327,13 @@ body.oldMovieEffectSlideDeck:before {
     animation-iteration-count: infinite;
     -webkit-animation-name: movingstripe;
     animation-name: movingstripe;
-
     border-left: solid 3px rgba(85,85,85,0.4);
     border-right: solid 2px rgba(85,85,85,0.4);
-
-
     -webkit-box-shadow: 0 0 10px rgba(85,85,85,0.5);
     box-shadow: 0 0 10px rgba(85,85,85,0.5);
     content: "";
     height: 100%;
     left: -300px;
-    /*outline: 3px solid rgba(85,85,85,0.4);*/
-    /*outline-offset: 80px;*/
     padding: 2px;
     position: absolute;
     width: 500px;    /* old */
@@ -351,8 +354,6 @@ body.oldMovieEffectSlideDeck div:before {  /*why is last-child etc not working*/
     content: "";
     height: 100%;
     left: 50%;
-    /*outline: 4px solid rgba(85,85,85,0.4);*/
-    /*outline-offset: 280px;*/
     padding: 2px;
     position: absolute;
     width: 400px;    /* old */
@@ -386,13 +387,11 @@ body.oldMovieEffectSlideDeck:after {
 body.oldMovieEffectSlideDeck :first-child:after {
     -webkit-animation: speckles 1s steps(1) infinite;
     animation: speckles 1s steps(1) infinite;
-    /*color: #696969;*/
     color: rgba(105,105,105,0.3);
     content: ".";
     font-size: 150px;    /* old */
     font-size: 15vm;   /* IE9 */
     font-size: 15vmin;
-    /*opacity: 0.3;*/
     text-shadow: 0 0 30px #fff;
     visibility: hidden;
     z-index: 5;
@@ -401,13 +400,11 @@ body.oldMovieEffectSlideDeck :first-child:after {
 body.oldMovieEffectSlideDeck :first-child:before {
     animation: speckles 1.3s 2s steps(1) infinite;
     -webkit-animation: speckles 1s 2s steps(1) infinite;
-    /*color: #fff;*/
     color: rgba(255,255,255,0.3);
     content: "~";
     font-size: 150px;    /* old */
     font-size: 15vm;   /* IE9 */
     font-size: 15vmin;
-    /*opacity: 0.3;*/
     text-shadow: 0 0 30px #fff;
     visibility: hidden;
     z-index: 5;
@@ -418,6 +415,4 @@ body.oldMovieEffectSlideDeck :first-child {/*http://jsfiddle.net/NeqCC/*/
     animation: letterfocus 15s steps(1) infinite;
     -webkit-animation: letterfocus 15s steps(1) infinite;
     color: rgba(227, 227, 227, 0.80);
-    /*text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;*/
-    text-shadow: 1px 4px 6px #e0e0e0, 0 0 0 #000, 1px 4px 6px #e0e0e0;
 }
