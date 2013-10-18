@@ -9,6 +9,7 @@
 }
 
 html, body {
+    background: #bbb;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -221,8 +222,6 @@ div img {
     }
 }
 
-
-
 @keyframes speckles {
     0% {
         visibility: hidden;
@@ -241,7 +240,7 @@ div img {
     0% {
         visibility: hidden;
     }
-    59% {
+    55% {
         visibility: visible;
     }
     60% {
@@ -320,34 +319,45 @@ body.oldMovieEffectSlideDeck:before {
     animation-iteration-count: infinite;
     -webkit-animation-name: movingstripe;
     animation-name: movingstripe;
-    border-left: solid 3px #555;
-    -webkit-box-shadow: 0 0 15px #444;
-    box-shadow: 0 0 55px #444;
+
+    border-left: solid 3px rgba(85,85,85,0.4);
+    border-right: solid 2px rgba(85,85,85,0.4);
+
+
+    -webkit-box-shadow: 0 0 10px rgba(85,85,85,0.5);
+    box-shadow: 0 0 10px rgba(85,85,85,0.5);
     content: "";
     height: 100%;
     left: -300px;
-    outline: 3px solid #555;
-    outline-offset: 300px;
+    /*outline: 3px solid rgba(85,85,85,0.4);*/
+    /*outline-offset: 80px;*/
     padding: 2px;
     position: absolute;
+    width: 500px;    /* old */
+    width: 500vm;   /* IE9 */
+    width: 50vmin;
     z-index: 2;
 }
 
-body.oldMovieEffectSlideDeck div:before { /* why is last-child etc not working */
+body.oldMovieEffectSlideDeck div:before {  /*why is last-child etc not working*/
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     -webkit-animation-name: movingstripe2;
     animation-name: movingstripe;
-    border-left: solid 1px #555;
+    border-left: solid 2px rgba(85,85,85,0.4);
+    border-right: solid 2px rgba(85,85,85,0.4);
     content: "";
     height: 100%;
     left: 50%;
-    outline: 1px solid #555;
-    outline-offset: 280px;
+    /*outline: 4px solid rgba(85,85,85,0.4);*/
+    /*outline-offset: 280px;*/
     padding: 2px;
     position: absolute;
+    width: 400px;    /* old */
+    width: 40vm;   /* IE9 */
+    width: 40vmin;
     z-index: 4;
 }
 
@@ -376,26 +386,28 @@ body.oldMovieEffectSlideDeck:after {
 body.oldMovieEffectSlideDeck :first-child:after {
     -webkit-animation: speckles 1s steps(1) infinite;
     animation: speckles 1s steps(1) infinite;
-    color: #696969;
+    /*color: #696969;*/
+    color: rgba(105,105,105,0.3);
     content: ".";
     font-size: 150px;    /* old */
     font-size: 15vm;   /* IE9 */
     font-size: 15vmin;
-    opacity: 0.3;
+    /*opacity: 0.3;*/
     text-shadow: 0 0 30px #fff;
     visibility: hidden;
     z-index: 5;
 }
 
 body.oldMovieEffectSlideDeck :first-child:before {
-    animation: speckles 1s 2s steps(1) infinite;
+    animation: speckles 1.3s 2s steps(1) infinite;
     -webkit-animation: speckles 1s 2s steps(1) infinite;
-    color: #fff;
+    /*color: #fff;*/
+    color: rgba(255,255,255,0.3);
     content: "~";
     font-size: 150px;    /* old */
     font-size: 15vm;   /* IE9 */
     font-size: 15vmin;
-    opacity: 0.3;
+    /*opacity: 0.3;*/
     text-shadow: 0 0 30px #fff;
     visibility: hidden;
     z-index: 5;
