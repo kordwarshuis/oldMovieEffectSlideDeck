@@ -8,69 +8,63 @@
     text-align: center;
 }
 
-
 html, body {
-    position: absolute;
+    height: 100%;
     margin: 0;
     padding: 0;
+    position: absolute;
     width: 100%;
-    height: 100%;
 }
 
 body {
-    position: fixed;
-
+    color: rgba(227, 227, 227, 0.80);
     font-size: 60px;    /* old */
     font-size: 6vm;   /* IE9 */
     font-size: 6vmin;
-
-    color: rgba(227, 227, 227, 0.80);
     font-family: 'Geneva, Verdana, “Lucida Sans”, “Lucida Grande”, “Lucida Sans Unicode”, sans-serif';
     -webkit-text-shadow: 1px 4px 1px #e0e0e0, 0 0 0 #000, 1px 4px 1px #e0e0e0;
+    position: fixed;
     text-shadow: 1px 4px 1px #e0e0e0, 0 0 0 #000, 1px 4px 1px #e0e0e0;
 }
 
 div {
     -webkit-box-shadow: inset 0 0 150px #000;
-    box-shadow: inset 0 0 150px #000;
     background-color: #696969;
-    background-size: 25% 25%;
     background-image: url("../img/ornament3.png"), url("../img/ornament3.png");
     background-position: center -20%, center 120%;
     background-repeat: no-repeat;
-
-    position: absolute;
-    top: 0;
+    background-size: 25% 25%;
+    box-shadow: inset 0 0 150px #000;
+    height: 100%;
     left: 0;
     margin: 0;
     overflow: hidden;
     padding: 0;
-    height: 100%;
+    position: absolute;
+    top: 0;
     width: 100%;
     z-index: 1;
 }
 
 p {
-    margin: 5% 10%;
     line-height: 1.5em;
+    margin: 5% 10%;
 }
-
 
 div img {
-    width: 60%;
-    min-width: 60%;
     margin: 0;
+    min-width: 60%;
     padding: 0;
+    width: 60%;
 }
 
-
 #githublink {
-    position: fixed;
-    right: 0;
     bottom: 0;
     font-size: 30px;    /* old */
     font-size: 3vm;   /* IE9 */
     font-size: 3vmin;
+    position: fixed;
+    right: 0;
     z-index: 1000;
 }
 
@@ -127,8 +121,6 @@ div img {
     }
 }
 
-
-
 @keyframes vignette {
     0% {
         box-shadow: inset 0 0 150px #000;
@@ -176,8 +168,6 @@ div img {
     }
 }
 
-
-
 @keyframes movingstripe {
     0% {
         /*transform: translateX(0px) rotate(4.5deg);*/
@@ -213,8 +203,6 @@ div img {
         -webkit-transform: translateX(1400px);
     }
 }
-
-
 
 @keyframes movingstripe2 {
     0% {
@@ -264,8 +252,6 @@ div img {
     }
 }
 
-
-
 @keyframes letterfocus {
     0% {
         text-shadow: 1px 4px 6px #e0e0e0, 0 0 0 #000, 1px 4px 6px #e0e0e0;
@@ -313,125 +299,108 @@ div img {
     }
 }
 
-
-
 body.oldMovieEffectSlideDeck {
-    content: "";
-    -webkit-animation-name: jumpy;
-    animation-name: jumpy;
-
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
-
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    visibility: visible;
-
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+    -webkit-animation-name: jumpy;
+    animation-name: jumpy;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    content: "";
+    visibility: visible;
     z-index: 4;
 }
+
 body.oldMovieEffectSlideDeck:before {
-    content: "";
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: movingstripe;
+    animation-name: movingstripe;
     border-left: solid 3px #555;
     -webkit-box-shadow: 0 0 15px #444;
     box-shadow: 0 0 55px #444;
-    padding: 2px;
+    content: "";
     height: 100%;
-    position: absolute;
     left: -300px;
-
     outline: 3px solid #555;
     outline-offset: 300px;
-
-    -webkit-animation-name: movingstripe;
-    animation-name: movingstripe;
-
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
-
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-
+    padding: 2px;
+    position: absolute;
     z-index: 2;
 }
+
 body.oldMovieEffectSlideDeck div:before { /* why is last-child etc not working */
-    content: "";
-    border-left: solid 1px #555;
-    padding: 2px;
-    height: 100%;
-    position: absolute;
-    left: 50%;
-
-    outline: 1px solid #555;
-    outline-offset: 280px;
-
-    -webkit-animation-name: movingstripe2;
-    animation-name: movingstripe;
-
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
-
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-
+    -webkit-animation-name: movingstripe2;
+    animation-name: movingstripe;
+    border-left: solid 1px #555;
+    content: "";
+    height: 100%;
+    left: 50%;
+    outline: 1px solid #555;
+    outline-offset: 280px;
+    padding: 2px;
+    position: absolute;
     z-index: 4;
 }
-body.oldMovieEffectSlideDeck:after {
-    content: "";
-    -webkit-animation-name: vignette;
-    animation-name: vignette;
 
+body.oldMovieEffectSlideDeck:after {
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
-
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: vignette;
+    animation-name: vignette;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
-
+    content: "";
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
     -ms-transform-origin: 50% 100%;
     -webkit-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
-
-    visibility: visible;
-
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-
     width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
+    visibility: visible;
     z-index: 5;
 }
+
 body.oldMovieEffectSlideDeck :first-child:after {
-    content: ".";
-
-    animation: speckles 1s steps(1) infinite;
     -webkit-animation: speckles 1s steps(1) infinite;
-
-    visibility: hidden;
-    font-size: 150px;
+    animation: speckles 1s steps(1) infinite;
     color: #696969;
-    text-shadow: 0 0 30px #fff;
-
+    content: ".";
+    font-size: 150px;    /* old */
+    font-size: 15vm;   /* IE9 */
+    font-size: 15vmin;
     opacity: 0.3;
-
+    text-shadow: 0 0 30px #fff;
+    visibility: hidden;
     z-index: 5;
 }
-body.oldMovieEffectSlideDeck :first-child:before {
-    content: "~";
 
+body.oldMovieEffectSlideDeck :first-child:before {
     animation: speckles 1s 2s steps(1) infinite;
     -webkit-animation: speckles 1s 2s steps(1) infinite;
-
-    visibility: hidden;
-    font-size: 150px;
     color: #fff;
-    text-shadow: 0 0 30px #fff;
+    content: "~";
+    font-size: 150px;    /* old */
+    font-size: 15vm;   /* IE9 */
+    font-size: 15vmin;
     opacity: 0.3;
+    text-shadow: 0 0 30px #fff;
+    visibility: hidden;
     z-index: 5;
 }
+
 body.oldMovieEffectSlideDeck :first-child {/*http://jsfiddle.net/NeqCC/*/
     /* Shadows are visible under slightly transparent text color */
     animation: letterfocus 15s steps(1) infinite;
