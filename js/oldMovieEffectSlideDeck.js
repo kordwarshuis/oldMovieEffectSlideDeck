@@ -1,9 +1,9 @@
 /*
- * Copyright 2013 Kor Dwarshuis <kor@dwarshuis.com>
- * Released under the MIT license.
+ * oldMovieEffectSlideDeck
+ * Copyright (c) 2013 Kor Dwarshuis (dwarshuis.com)
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/mit-license.php
  */
-
-
 var noise = (function () { // background sound
     "use strict";
     var fragment = document.createDocumentFragment();

@@ -1,8 +1,9 @@
 /*
- * Copyright 2013 Kor Dwarshuis <kor@dwarshuis.com>
- * Released under the MIT license.
+ * oldMovieEffectSlideDeck
+ * Copyright (c) 2013 Kor Dwarshuis (dwarshuis.com)
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/mit-license.php
  */
-
 * {
     box-sizing: border-box;
     text-align: center;
@@ -53,6 +54,10 @@ p {
 }
 
 div img {
+    border: 13px solid rgba(34,34,34,0.1);
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    background-clip: padding-box;
     margin: 0;
     min-width: 60%;
     padding: 0;
